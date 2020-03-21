@@ -1,0 +1,42 @@
+To install virtual environment
+run 'pip install pipenv'
+
+Then to create the virtual environment
+run 'pipenv shell'
+
+To install django
+run 'pipenv install django'
+
+To start the project 'pollster'
+run 'django-admin startproject pollster'
+
+Change directory into the created pollster application folder
+run 'cd pollster'
+
+Test your server by running it using the django default port which is 8000 or setting your port to 8081
+run 'python manage.py runserver' or 'python manage.py runserver 8081' 
+
+You can change your database congiguration in the settings.py or go ahead and use the default sqlite database, then migrate
+run 'python manage.py migrate'
+
+To create your first app named polls
+run 'python manage.py startapp polls'
+
+Edit your app models 'polls.models'
+
+Add the app to install apps in settings.py
+add 'polls.apps.PollsConfig'
+
+Make migrations for the polls app
+run 'python manage.py makemigrations polls'
+
+Then apply the migrations
+run 'python manage.py migrate'
+
+create super user with 
+run 'python manage.py createsuperuser'
+Edit your admin page
+
+Add urls.py to the app 'polls' folder
+
+And Continue editing till you have your desired website.
